@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Quirky Series Ultimate\_Scripts\Demo.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\CollisionHandler.cs" />
      <None Include="Assets\Quirky Series Ultimate\_Shader\SoftSurface.shader" />
      <None Include="Assets\Quirky Series Ultimate\_Shader\ToonRamp.shader" />
     <Reference Include="UnityEngine">
