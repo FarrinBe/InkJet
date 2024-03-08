@@ -10,15 +10,25 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem successParticles;
 
     AudioSource audioSource;
-
+    bool colliderDisabled = false;
     bool isTransitioning = false;
 
     void Start(){
         audioSource = GetComponent<AudioSource>();
     }
 
+    void Update(){
+        if (Input.GetKey(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKey(KeyCode.C)){
+            colliderDisabled = !colliderDisabled;
+        }
+    }
+
     private void OnCollisionEnter(Collision other) {
-        if(isTransitioning) { return; }
+        if(isTransitioning || colliderDisabled) { return; }
 
         switch(other.gameObject.tag) {
             case "Finish":
@@ -32,6 +42,7 @@ public class CollisionHandler : MonoBehaviour
                 break;
         }
     }
+
     void StartCrashSequence(){
         isTransitioning = true;
         crashParticles.Play();

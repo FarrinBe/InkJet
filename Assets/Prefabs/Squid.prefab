@@ -517,6 +517,7 @@ MonoBehaviour:
   rotateSpeed: 200
   audioClip: {fileID: 8300000, guid: ebccb526c2760e14591538b02f3686e0, type: 3}
   mainBooster: {fileID: 4362677791211465111}
+  inkCooldown: 0.2
 --- !u!82 &8554667706096512887
 AudioSource:
   m_ObjectHideFlags: 0
