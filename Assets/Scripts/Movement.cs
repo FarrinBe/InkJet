@@ -9,8 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float rotateSpeed = 15f;
     [SerializeField] AudioClip audioClip;
     [SerializeField] ParticleSystem mainBooster;
-    [SerializeField] ParticleSystem leftBooster;
-    [SerializeField] ParticleSystem rightBooster;
+
 
     Rigidbody rb;
     AudioSource audioSource;
@@ -35,17 +34,29 @@ public class Movement : MonoBehaviour
             if (!audioSource.isPlaying){
                 audioSource.PlayOneShot(audioClip);
             }
-            if (!mainBooster.isPlaying)
-            {
-                mainBooster.Play();
-            }
+            ShootInk();
         }
         else{
             audioSource.Stop();
-            mainBooster.Stop();
         }
     }
+    void ShootInk()
+    {
+        // Assuming the player's forward direction aligns with the Z-axis due to the rotation (90, 270, 0),
+        // and considering you want the ink to appear a bit forward (.25 in Z) and above (.3 in Y) the player.
+        Vector3 adjustedPosition = transform.position + new Vector3(0, -1f, -1f);
 
+        // Use the player's rotation directly without further adjustments,
+        // assuming the prefab itself is oriented correctly for the effect you want.
+        Quaternion inkRotation = Quaternion.LookRotation(-transform.forward);
+
+        // Instantiate the ink prefab with the adjusted position and the player's rotation
+        ParticleSystem inkBurst = Instantiate(mainBooster, adjustedPosition, inkRotation);
+        inkBurst.Play();
+
+        // Destroy the Particle System after it's finished
+        Destroy(inkBurst.gameObject, inkBurst.main.duration + inkBurst.main.startLifetime.constantMax);
+    }
 
     void ProcessRotation()
     {
