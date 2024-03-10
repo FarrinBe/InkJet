@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
     {
         if (Time.time >= nextInkTime)
         {
-            Vector3 positionOffset = new Vector3(0, 0.3f, 0.25f); // Adjust as needed
+            Vector3 positionOffset = new Vector3(0, 1f, .5f); // Adjust as needed
             Vector3 adjustedPosition = transform.position + transform.TransformDirection(positionOffset);
             Quaternion inkRotation = Quaternion.LookRotation(-transform.forward);
 

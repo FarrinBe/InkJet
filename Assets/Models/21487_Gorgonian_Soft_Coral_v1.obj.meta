@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 21487_Gorgonian_Soft_Coral_v1Mat
-    second: {fileID: 2100000, guid: 9f4c138f586bacf47a1732186c9e6f58, type: 2}
+    second: {fileID: 2100000, guid: 05699a6a54ce3d1459c473bb40f745fa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
