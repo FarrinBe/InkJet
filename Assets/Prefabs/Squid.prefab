@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 7246170046917295789}
   - component: {fileID: 8554667706096512887}
   - component: {fileID: 991175389}
+  - component: {fileID: 8856815684586672372}
   m_Layer: 0
   m_Name: Squid
   m_TagString: Player
@@ -723,6 +724,18 @@ MonoBehaviour:
   successSound: {fileID: 8300000, guid: 3ee0d1bf15ccdfd4a8c5000cbada1d90, type: 3}
   crashParticles: {fileID: 8632365859592266563}
   successParticles: {fileID: 5640572493254367329}
+--- !u!114 &8856815684586672372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038114840533862827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeffd27f990f144b866cc5dd42e1836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7540773388475008065
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,12 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PersistentAudioSource.cs" />
+     <Compile Include="Assets\Scripts\Oscillator1.cs" />
      <Compile Include="Assets\Quirky Series Ultimate\_Scripts\Demo.cs" />
+     <Compile Include="Assets\Scripts\Geyser.cs" />
      <Compile Include="Assets\Scripts\CollisionHandler.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
-     <Compile Include="Assets\Scripts\Oscillator1.cs" />
-     <Compile Include="Assets\Scripts\Oscillator2.cs" />
-     <Compile Include="Assets\Scripts\Geyser.cs" />
+     <Compile Include="Assets\Scripts\QuitApplication.cs" />
      <None Include="Assets\Quirky Series Ultimate\_Shader\SoftSurface.shader" />
      <None Include="Assets\Quirky Series Ultimate\_Shader\ToonRamp.shader" />
     <Reference Include="UnityEngine">

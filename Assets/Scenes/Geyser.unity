@@ -456,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038114840533862826, guid: 38844ef9b5b2c4740aa901572445add5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7038114840533862826, guid: 38844ef9b5b2c4740aa901572445add5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17608,7 +17608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d0b58a5db2d4b4d8b03dc3f675e5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geyserParticleSystem: {fileID: 0}
+  geyserParticleSystem: {fileID: 8414474426340750651, guid: a2c217e248e1ae74999f7cd26b68d166, type: 3}
   force: 1000
 --- !u!1001 &4579430394034586306
 PrefabInstance:
